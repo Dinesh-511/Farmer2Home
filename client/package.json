@@ -1,0 +1,11 @@
+{
+    "name": "farmer2home-client",
+    "version": "1.0.0",
+    "description": "Frontend for Farmer2Home Connect",
+    "scripts": {
+        "start": "npx serve --no-request-logging .",
+        "dev": "npx serve --no-request-logging ."
+    },
+    "author": "",
+    "license": "ISC"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer2Home Connect</title>
+    <link rel="stylesheet" href="css/style.css?v=1.4">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+
+    <!-- Modern Stack: Tailwind + React -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2e7d32',
+                        secondary: '#ffa726',
+                        dashboardBg: '#F5F7F2',
+                    },
+                    borderRadius: {
+                        '2xl': '1rem',
+                        '3xl': '1.5rem',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Farmer2Home</div>
+        <ul class="nav-links" id="nav-links">
+            <!-- Dynamically populated based on auth state -->
+            <li><a href="#/login" class="nav-link">Login</a></li>
+            <li><a href="#/register" class="nav-link">Register</a></li>
+        </ul>
+        <div id="user-info" class="user-info" style="display: none;">
+            <span id="user-name"></span>
+            <a href="#/profile" id="profile-link"
+                style="margin-right: 10px; text-decoration: none; color: inherit; font-weight: 600;">👤 Profile</a>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <main id="app">
+        <!-- Views rendered here -->
+        <div class="flex flex-col items-center justify-center min-vh-100 py-20 mt-10">
+            <div class="w-16 h-16 border-4 border-green-100 border-t-primary rounded-full animate-spin"></div>
+            <h2 class="mt-6 text-2xl font-bold text-gray-800 tracking-tight">Farmer2Home Connect</h2>
+            <p class="mt-2 text-primary font-medium animate-pulse">Loading amazing things...</p>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
