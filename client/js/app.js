@@ -1,14 +1,14 @@
-import router from './router.js';
-import './api/api.js';
-import './api/auth.js';
-import './api/crops.js';
-import './api/orders.js';
-import './api/reviews.js';
-import './api/analytics.js';
-import './services/userService.js';
-import './services/socketService.js';
-import './utils/notifier.js';
-import './cart.js';
+import router from './router.js?v=2.0';
+import './api/api.js?v=2.0';
+import './api/auth.js?v=2.0';
+import './api/crops.js?v=2.0';
+import './api/orders.js?v=2.0';
+import './api/reviews.js?v=2.0';
+import './api/analytics.js?v=2.0';
+import './services/userService.js?v=2.0';
+import './services/socketService.js?v=2.0';
+import './utils/notifier.js?v=2.0';
+import './cart.js?v=2.0';
 
 // Initialize Router
 window.addEventListener('load', router);
