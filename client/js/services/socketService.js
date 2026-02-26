@@ -1,4 +1,4 @@
-const socket = io('https://farmer2home-1.onrender.com');
+const socket = io('https://farmer2home-2.onrender.com');
 
 socket.on('connect', () => {
 

@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const API_URL = 'https://farmer2home-1.onrender.com/api';
+const API_URL = 'http://localhost:5000/api/auth';
 const TEST_USER = {
     name: 'Test Verify User',
     email: 'testverify@example.com',

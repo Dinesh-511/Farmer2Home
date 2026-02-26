@@ -1,4 +1,4 @@
-const API_URL = 'https://farmer2home-1.onrender.com/api';
+const API_URL = 'https://farmer2home-2.onrender.com/api';
 
 const getHeaders = () => {
     const headers = {
